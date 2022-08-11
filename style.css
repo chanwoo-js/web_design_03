@@ -1,0 +1,73 @@
+/* 전체 설정 */
+*{padding: 0; margin: 0;box-sizing: border-box; list-style: none;text-decoration: none; color: #333333; }
+.wrap {width: 1200px; height: 700px; margin: 0 auto;background-color: #ffffff;}
+/* 영역 구분 */
+header::after{content: ""; display: block; clear: both; }
+.logo_contain {float: left;}
+.logo_contain h1 {width: 250px; height: 100px;}
+.logo_contain > h1 > a{display: inline-block; width: 250px; height: 100px;}
+.logo_contain > h1 > a > img {display: inline-block; width: 250px; height: 100px;}
+
+/* 네비 */
+nav {float: left; height: 100px; width:950px; background-color: #cfd1d1;}
+nav > ul { width: 600px; height: 100px; float: right; margin-right: 40px;font-size: 0;line-height: 100px;}
+nav > ul > li {display: inline-block; font-size: 16px; width: 150px; height: 40px; line-height: 40px; vertical-align: bottom; text-align: center;background-color: black;}
+nav > ul > li > a {display: inline-block; width: 150px; height: 40px;color: white;}
+nav > ul > li > ul {width: 150px; height: 160px; z-index: 10; position: relative; background-color: rgb(54, 52, 49); display: none; }
+nav > ul > li > ul > li > a{color: white; display: inline-block; width: 150px; height: 40px;}
+nav > ul > li > ul > li:hover > a { background-color: #ffffff; color: black;}
+
+.menu_bg {width: 1200px;height: 160px; position: absolute; z-index: 10; background-color: rgb(54, 52, 49); top: 100px; display: none;} 
+
+
+/* 이미지 슬라이드 */
+.image_view {width: 1200px; height: 300px; overflow: hidden;}
+.images_box {width: 3600px; height: 300px; font-size: 0;}
+.images_box a {display: inline-block; width: 1200px; height: 300px; font-size: 16px;}
+.images_box img {display: inline-block; width: 1200px; height: 300px;}
+
+/* 컨텐츠 */
+.contents {height: 200px; padding: 10px 0; }
+.contents > div {float: left; width: 400px; height: 180px;}
+/* 공지사항 */
+.notice {padding: 0 10px;}
+.notice a {display: inline-block; width: 380px;}
+.notice h2 {font-size: 20px;}
+.notice ul {height: 139px; border-top: 4px solid orange; margin: 10px 0 0 0;}
+.notice li { height: calc(139px/4); line-height:calc(139px/4) ;}
+.notice li:nth-of-type(2n) {background-color: orange;}
+.notice h3 {float: left; font-size: 16px;}
+.notice span {float: right;}
+.notice::after {content: ""; display: block; clear: both;}
+/* 갤러리 */
+.gallery {padding: 0 10px;}
+.gallery h2 {font-size: 20px;}
+.gallery ul {height: 139px; border-top: 4px solid orange; margin: 10px 0 0 0; font-size: 0;text-align: center; line-height: 139px;}  
+.gallery li {display: inline-block; width: 100px; height: 100px; font-size: 16px; vertical-align: middle;margin: 0 10px;}
+.gallery a {display: inline-block; width: 100px; height: 100px;}
+/* 바로가기 */
+.shortcut a{display: inline-block; width: 400px; height: 180px; position: relative; }
+.shortcut img{display: inline-block; width: 400px; height:180px;}
+.shortcut span {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); display: inline-block; text-align: center; width: 200px; height: 30px; line-height: 30px; background-color: rgba(0, 0, 0, 0.5); color: white;}
+/* 푸터 */
+footer {background-color: #cfd1d1; height: 100px;}
+.footer_right {width: 300px; height: 100px; float: left;}
+
+/* 저작권 */
+.copyright {height: 100px; float: left; width: 900px; text-align: center; line-height: 100px;}
+
+
+/* sns */
+.sns {height: 60px; font-size: 0; line-height: 60px; text-align: center;}
+.sns a {display: inline-block; width: 40px; height: 40px; font-size: 16px; margin: 0 10px; vertical-align: bottom;}
+.sns img{height: 40px;}
+/* 패밀리사이트 */
+.family_site {text-align: center; height: 40px; line-height: 40px;}
+/* 모달창 */
+.modal_back {position: absolute; width: 100%; height: 100%; top:0; left: 0; background-color: rgba(0, 0, 0, 0.5);} 
+.modal_box {position: absolute; width: 500px; height: 250px; top: 50%; left: 50%; transform: translate(-50%,-50%); background-color: #ffffff; padding: 20px;}
+.modal_box h2{ padding: 10px;}
+.modal_box p {line-height: 25px;}
+.modal_box button {float: right; padding: 5px 10px;}
+.modal_back{display: none;}
+.modal_back.active{ display: block;}
